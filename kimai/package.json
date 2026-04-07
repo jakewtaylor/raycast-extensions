@@ -16,7 +16,7 @@
   "commands": [
     {
       "name": "start-a-timer",
-      "title": "Start a timer",
+      "title": "Start a Timer",
       "description": "Starts a timer with an optional description.",
       "mode": "view"
     },
@@ -29,7 +29,7 @@
     },
     {
       "name": "stop-active-timer",
-      "title": "Stop active timer",
+      "title": "Stop Active Timer",
       "description": "Stops the currently active timer.",
       "mode": "no-view",
       "disabledByDefault": false

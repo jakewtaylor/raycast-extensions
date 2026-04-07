@@ -43,7 +43,7 @@ export default function Command() {
     load();
   }, []);
 
-  const currentActivities = selectedProjectId ? activitiesByProject.get(Number(selectedProjectId)) ?? [] : [];
+  const currentActivities = selectedProjectId ? (activitiesByProject.get(Number(selectedProjectId)) ?? []) : [];
 
   async function handleSubmit(values: { projectId: string; activityId: string; description: string }) {
     if (hasActiveTimer) {

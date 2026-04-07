@@ -128,7 +128,11 @@ export async function getActivityProjectPairs(): Promise<ActivityProjectPair[]> 
   return pairs;
 }
 
-export async function startTimesheet(activityId: number, projectId: number, description?: string): Promise<TimesheetEntry> {
+export async function startTimesheet(
+  activityId: number,
+  projectId: number,
+  description?: string,
+): Promise<TimesheetEntry> {
   return request<TimesheetEntry>("/timesheets", {
     method: "POST",
     body: JSON.stringify({
